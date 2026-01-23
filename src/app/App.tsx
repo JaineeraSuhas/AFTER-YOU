@@ -458,8 +458,8 @@ export default function App() {
           {/* Left Column */}
           <div className="col-span-4 flex flex-col" style={{ paddingBottom: '48px' }}>
             <div className="mb-8">
-              <h1 className={`text-6xl mb-4 tracking-tight ${isDarkMode ? 'text-white' : 'text-black'}`} style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700 }}>After You</h1>
-              <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed font-normal`}>
+              <h1 className="text-6xl mb-4 tracking-tight text-black" style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700 }}>After You</h1>
+              <p className="text-gray-600 leading-relaxed font-normal">
                 Type as if someone will come after you.<br />
                 Write a line, leave a thought, or finish someone else's sentence.<br />
                 What you type stays, waiting for the next person.<br /><br />
