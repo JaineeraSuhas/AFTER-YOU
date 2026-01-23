@@ -62,9 +62,6 @@ export function Typewriter({
 
     if (key === 'Backspace') {
       onBackspace();
-    } else if (key === 'Enter') {
-      onReturn();
-      onCarriageMove(100);
     }
   };
 
