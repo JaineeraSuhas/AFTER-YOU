@@ -414,8 +414,21 @@ export default function App() {
     }
   };
 
+  // Preload images for smooth transition
+  useEffect(() => {
+    const preloadImages = () => {
+      const images = [baseLayerImage, carriageLayerImage];
+      images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+    preloadImages();
+  }, []);
+
   const handleEnterApp = () => {
     setIsTransitioning(true);
+    // Wait for fade out, then switch and fade in
     setTimeout(() => {
       setShowLanding(false);
       setIsTransitioning(false);
