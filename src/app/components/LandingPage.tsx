@@ -79,7 +79,8 @@ export default function LandingPage({ onEnter, isDarkMode, toggleTheme }: Landin
                     style={{ height: "100%", width: "100%" }}
                     colorBack={isDarkMode ? "hsl(0, 0%, 0%)" : "hsl(0, 0%, 95%)"}
                     colorFront={isDarkMode ? "hsl(320, 100%, 70%)" : "hsl(220, 100%, 70%)"}
-                    shape="sphere"
+                    // @ts-ignore
+                    shape="cat"
                     type="4x4"
                     pxSize={3}
                     offsetX={0}
