@@ -108,7 +108,7 @@ export function Typewriter({
         </div>
 
         {/* Drag instruction */}
-        <div className="absolute -top-2 left-8 text-[10px] text-gray-400 font-mono z-50">
+        <div className="absolute -top-8 left-8 text-xs text-gray-500 font-bold font-mono z-50">
           drag carriage to return
         </div>
 
