@@ -90,7 +90,7 @@ export function Typewriter({
       >
         {/* Carriage Layer (z-20 - middle, roller mechanism) */}
         {carriageLayerImageUrl && (
-          <div className="absolute inset-0 z-20 w-full h-full pointer-events-none transform scale-90 origin-top">
+          <div className="absolute inset-0 z-20 w-full h-full pointer-events-none transform scale-85 origin-top">
             <TransparentImage
               src={carriageLayerImageUrl}
               alt=""

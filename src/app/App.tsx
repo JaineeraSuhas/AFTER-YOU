@@ -330,13 +330,6 @@ export default function App() {
       // Take snapshot automatically
       await takeSnapshot();
 
-      // Show snapshot notification
-      setNotification({
-        message: 'Page full! Snapshot saved automatically ✨',
-        type: 'snapshot',
-        icon: '📸'
-      });
-
       // Wait a moment, then clear paper
       setTimeout(async () => {
         await useNewPaper();
