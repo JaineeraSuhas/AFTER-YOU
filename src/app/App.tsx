@@ -305,9 +305,7 @@ export default function App() {
     // Scroll paper up
     setScrollPosition(scrollPosition + 20);
 
-    if (backendAvailable) {
-      updateCarriagePosition(newOffset);
-    }
+
 
     console.log('📤 Saving to Firebase:', newLines.length, 'lines');
 
