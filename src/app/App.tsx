@@ -4,6 +4,7 @@ import { Paper } from '@/app/components/Paper';
 import { SnapshotModal } from '@/app/components/SnapshotModal';
 import { TypingIndicator } from '@/app/components/TypingIndicator';
 import { Notification, NotificationType } from '@/app/components/Notification';
+import LandingPage from '@/app/components/LandingPage';
 import {
   subscribeToPaper,
   updatePaperContent,
@@ -57,6 +58,8 @@ export default function App() {
   const [notification, setNotification] = useState<{ message: string; type: NotificationType; icon?: string } | null>(null);
   const [activeUsers, setActiveUsers] = useState(1);
   const [snapshotFlash, setSnapshotFlash] = useState(false);
+  const [showLanding, setShowLanding] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // User identity
   const { userId, userName } = getUserIdAndName();
@@ -411,6 +414,14 @@ export default function App() {
     }
   };
 
+  const handleEnterApp = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setShowLanding(false);
+      setIsTransitioning(false);
+    }, 600);
+  };
+
   if (!isInitialized) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
@@ -419,8 +430,16 @@ export default function App() {
     );
   }
 
+  if (showLanding) {
+    return (
+      <div className={`transition-opacity duration-600 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+        <LandingPage onEnter={handleEnterApp} />
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white animate-fadeIn">
       <div className="container mx-auto px-8 py-12">
         <div className="grid grid-cols-12 gap-12">
           {/* Left Column */}
