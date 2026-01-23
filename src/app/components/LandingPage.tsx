@@ -38,7 +38,7 @@ export default function LandingPage({ onEnter }: LandingPageProps) {
 
                 {/* Header */}
                 <div className="mb-12">
-                    <h1 className="text-4xl font-normal mb-8">After You</h1>
+                    <h1 className="text-4xl font-normal mb-8">AFTER YOU</h1>
                     <div className="mb-8">
                         <h2 className="text-2xl font-normal">A COLLABORATIVE</h2>
                         <h3 className="text-2xl font-normal">TYPEWRITER</h3>
@@ -47,9 +47,9 @@ export default function LandingPage({ onEnter }: LandingPageProps) {
 
                 {/* Description Section */}
                 <div className="mb-12 space-y-4 text-base leading-relaxed">
-                    <p>Type as if someone will come after you.</p>
-                    <p>Write a line, leave a thought, or finish someone else's sentence.</p>
-                    <p>What you type stays, waiting for the next person.</p>
+                    <p>be anonymous.</p>
+                    <p>type type and type</p>
+                    <p>{"don't forget to drag the carriage to save the line :)"}</p>
                 </div>
 
                 {/* Enter Button */}
@@ -57,8 +57,8 @@ export default function LandingPage({ onEnter }: LandingPageProps) {
                     <button
                         onClick={onEnter}
                         className={`px-8 py-3 text-lg font-mono border-2 transition-all duration-300 ${isDarkMode
-                                ? "border-white hover:bg-white hover:text-black"
-                                : "border-black hover:bg-black hover:text-white"
+                            ? "border-white hover:bg-white hover:text-black"
+                            : "border-black hover:bg-black hover:text-white"
                             }`}
                     >
                         SHARE LOVE
@@ -68,7 +68,7 @@ export default function LandingPage({ onEnter }: LandingPageProps) {
                 {/* Footer Links Section */}
                 <div className="absolute bottom-8 left-8">
                     <div className="flex space-x-4 text-sm font-mono opacity-70">
-                        <span>Created by jaineerasuhas</span>
+                        <span>created by jaineerasuhas</span>
                     </div>
                 </div>
             </div>
