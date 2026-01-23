@@ -367,6 +367,10 @@ export default function App() {
   };
 
   const takeSnapshot = async () => {
+    // Trigger flash animation
+    setSnapshotFlash(true);
+    setTimeout(() => setSnapshotFlash(false), 800);
+
     // Capture last 15 lines
     const allLines = [...lines, { text: currentLine, color: inkColor }];
     const last15Lines = allLines.slice(-15);
