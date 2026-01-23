@@ -81,7 +81,7 @@ export function Typewriter({
 
   return (
     <div
-      className="relative w-full mt-12 flex justify-center overflow-hidden"
+      className="relative w-full mt-12 flex justify-center"
       style={{ height: '600px', touchAction: 'none' }}
       onClick={() => inputRef.current?.focus({ preventScroll: true })}
     >

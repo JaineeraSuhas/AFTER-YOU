@@ -450,7 +450,7 @@ export default function App() {
   }
 
   return (
-    <div className={`min-h-screen animate-fadeIn transition-colors duration-300 ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+    <div className="min-h-screen bg-white animate-fadeIn">
       <div className="container mx-auto px-8 py-12 relative">
         {/* Theme Toggle Button for Main App */}
 
